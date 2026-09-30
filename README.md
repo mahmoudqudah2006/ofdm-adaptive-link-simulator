@@ -21,27 +21,220 @@ The project is intentionally written as readable research software rather than a
 
 ## Signal model
 
-For an OFDM symbol with frequency-domain symbols (X[k]), the transmitted time-domain signal is
+For an OFDM symbol with frequency-domain symbols `$X[k]# OFDM Adaptive Link Simulator
 
-[
+A compact, reproducible **OFDM physical-layer simulator** for studying modulation, channel impairment, BER, and SNR-driven adaptive modulation.
+
+The project is intentionally written as readable research software rather than a black-box communications toolbox. It is suitable for portfolio work, classroom experiments, algorithm prototyping, and as a foundation for later ML/RL-based link adaptation.
+
+## Features
+
+- Baseband OFDM modulation/demodulation with configurable FFT and cyclic prefix
+- BPSK, QPSK, 16-QAM, and 64-QAM
+- Gray-coded QAM mapping and hard-decision demodulation
+- AWGN channel
+- Flat Rayleigh fading with perfect one-tap equalization
+- BER versus SNR sweeps
+- Threshold-based adaptive modulation
+- Spectral-efficiency tracking
+- Reproducible random seeds
+- JSON result export
+- Publication-style plotting helper
+- Unit tests and GitHub Actions CI
+
+## Signal model
+
+For an OFDM symbol with frequency-domain , the transmitted time-domain signal is
+
+$
 x[n] = \frac{1}{\sqrt{N}}\sum_{k=0}^{N-1} X[k]e^{j2\pi kn/N}.
-]
+$
 
-A cyclic prefix of length (N_{CP}) is prepended. The AWGN model is
+A cyclic prefix of length `$N_{CP}# OFDM Adaptive Link Simulator
 
-[
+A compact, reproducible **OFDM physical-layer simulator** for studying modulation, channel impairment, BER, and SNR-driven adaptive modulation.
+
+The project is intentionally written as readable research software rather than a black-box communications toolbox. It is suitable for portfolio work, classroom experiments, algorithm prototyping, and as a foundation for later ML/RL-based link adaptation.
+
+## Features
+
+- Baseband OFDM modulation/demodulation with configurable FFT and cyclic prefix
+- BPSK, QPSK, 16-QAM, and 64-QAM
+- Gray-coded QAM mapping and hard-decision demodulation
+- AWGN channel
+- Flat Rayleigh fading with perfect one-tap equalization
+- BER versus SNR sweeps
+- Threshold-based adaptive modulation
+- Spectral-efficiency tracking
+- Reproducible random seeds
+- JSON result export
+- Publication-style plotting helper
+- Unit tests and GitHub Actions CI
+
+## Signal model
+
+For an OFDM symbol with frequency-domain symbols `$X[k]# OFDM Adaptive Link Simulator
+
+A compact, reproducible **OFDM physical-layer simulator** for studying modulation, channel impairment, BER, and SNR-driven adaptive modulation.
+
+The project is intentionally written as readable research software rather than a black-box communications toolbox. It is suitable for portfolio work, classroom experiments, algorithm prototyping, and as a foundation for later ML/RL-based link adaptation.
+
+## Features
+
+- Baseband OFDM modulation/demodulation with configurable FFT and cyclic prefix
+- BPSK, QPSK, 16-QAM, and 64-QAM
+- Gray-coded QAM mapping and hard-decision demodulation
+- AWGN channel
+- Flat Rayleigh fading with perfect one-tap equalization
+- BER versus SNR sweeps
+- Threshold-based adaptive modulation
+- Spectral-efficiency tracking
+- Reproducible random seeds
+- JSON result export
+- Publication-style plotting helper
+- Unit tests and GitHub Actions CI
+
+## Signal model
+
+For an OFDM symbol with frequency-domain , the transmitted time-domain signal is
+
+$
+x[n] = \frac{1}{\sqrt{N}}\sum_{k=0}^{N-1} X[k]e^{j2\pi kn/N}.
+$
+
+A cyclic prefix of  is prepended. The AWGN model is
+
+$
 y[n] = x[n] + w[n],
-]
+$
 
 where the complex Gaussian noise variance is derived from the measured signal power and requested SNR.
 
 For flat Rayleigh fading,
 
-[
+$
 y[n] = h x[n] + w[n], \qquad h\sim\mathcal{CN}(0,1),
-]
+$
 
-and the simulator applies perfect one-tap equalization (y/h). This is intentionally a link-level abstraction; channel estimation error and frequency-selective multipath are roadmap items.
+and the simulator applies perfect one-tap equalization `$y/h# OFDM Adaptive Link Simulator
+
+A compact, reproducible **OFDM physical-layer simulator** for studying modulation, channel impairment, BER, and SNR-driven adaptive modulation.
+
+The project is intentionally written as readable research software rather than a black-box communications toolbox. It is suitable for portfolio work, classroom experiments, algorithm prototyping, and as a foundation for later ML/RL-based link adaptation.
+
+## Features
+
+- Baseband OFDM modulation/demodulation with configurable FFT and cyclic prefix
+- BPSK, QPSK, 16-QAM, and 64-QAM
+- Gray-coded QAM mapping and hard-decision demodulation
+- AWGN channel
+- Flat Rayleigh fading with perfect one-tap equalization
+- BER versus SNR sweeps
+- Threshold-based adaptive modulation
+- Spectral-efficiency tracking
+- Reproducible random seeds
+- JSON result export
+- Publication-style plotting helper
+- Unit tests and GitHub Actions CI
+
+## Signal model
+
+For an OFDM symbol with frequency-domain symbols `$X[k]# OFDM Adaptive Link Simulator
+
+A compact, reproducible **OFDM physical-layer simulator** for studying modulation, channel impairment, BER, and SNR-driven adaptive modulation.
+
+The project is intentionally written as readable research software rather than a black-box communications toolbox. It is suitable for portfolio work, classroom experiments, algorithm prototyping, and as a foundation for later ML/RL-based link adaptation.
+
+## Features
+
+- Baseband OFDM modulation/demodulation with configurable FFT and cyclic prefix
+- BPSK, QPSK, 16-QAM, and 64-QAM
+- Gray-coded QAM mapping and hard-decision demodulation
+- AWGN channel
+- Flat Rayleigh fading with perfect one-tap equalization
+- BER versus SNR sweeps
+- Threshold-based adaptive modulation
+- Spectral-efficiency tracking
+- Reproducible random seeds
+- JSON result export
+- Publication-style plotting helper
+- Unit tests and GitHub Actions CI
+
+## Signal model
+
+For an OFDM symbol with frequency-domain , the transmitted time-domain signal is
+
+$
+x[n] = \frac{1}{\sqrt{N}}\sum_{k=0}^{N-1} X[k]e^{j2\pi kn/N}.
+$
+
+A cyclic prefix of length `$N_{CP}# OFDM Adaptive Link Simulator
+
+A compact, reproducible **OFDM physical-layer simulator** for studying modulation, channel impairment, BER, and SNR-driven adaptive modulation.
+
+The project is intentionally written as readable research software rather than a black-box communications toolbox. It is suitable for portfolio work, classroom experiments, algorithm prototyping, and as a foundation for later ML/RL-based link adaptation.
+
+## Features
+
+- Baseband OFDM modulation/demodulation with configurable FFT and cyclic prefix
+- BPSK, QPSK, 16-QAM, and 64-QAM
+- Gray-coded QAM mapping and hard-decision demodulation
+- AWGN channel
+- Flat Rayleigh fading with perfect one-tap equalization
+- BER versus SNR sweeps
+- Threshold-based adaptive modulation
+- Spectral-efficiency tracking
+- Reproducible random seeds
+- JSON result export
+- Publication-style plotting helper
+- Unit tests and GitHub Actions CI
+
+## Signal model
+
+For an OFDM symbol with frequency-domain symbols `$X[k]# OFDM Adaptive Link Simulator
+
+A compact, reproducible **OFDM physical-layer simulator** for studying modulation, channel impairment, BER, and SNR-driven adaptive modulation.
+
+The project is intentionally written as readable research software rather than a black-box communications toolbox. It is suitable for portfolio work, classroom experiments, algorithm prototyping, and as a foundation for later ML/RL-based link adaptation.
+
+## Features
+
+- Baseband OFDM modulation/demodulation with configurable FFT and cyclic prefix
+- BPSK, QPSK, 16-QAM, and 64-QAM
+- Gray-coded QAM mapping and hard-decision demodulation
+- AWGN channel
+- Flat Rayleigh fading with perfect one-tap equalization
+- BER versus SNR sweeps
+- Threshold-based adaptive modulation
+- Spectral-efficiency tracking
+- Reproducible random seeds
+- JSON result export
+- Publication-style plotting helper
+- Unit tests and GitHub Actions CI
+
+## Signal model
+
+For an OFDM symbol with frequency-domain , the transmitted time-domain signal is
+
+$
+x[n] = \frac{1}{\sqrt{N}}\sum_{k=0}^{N-1} X[k]e^{j2\pi kn/N}.
+$
+
+A cyclic prefix of  is prepended. The AWGN model is
+
+$
+y[n] = x[n] + w[n],
+$
+
+where the complex Gaussian noise variance is derived from the measured signal power and requested SNR.
+
+For flat Rayleigh fading,
+
+$
+y[n] = h x[n] + w[n], \qquad h\sim\mathcal{CN}(0,1),
+$
+
+and the simulator applies perfect one-tap . This is intentionally a link-level abstraction; channel estimation error and frequency-selective multipath are roadmap items.
 
 ## Adaptive modulation
 
